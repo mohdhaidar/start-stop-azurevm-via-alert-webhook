@@ -1,10 +1,10 @@
 # Start / Stop Azure VMs via Alert Webhook
 
 This runbook starts or stops tagged or all VMs via Azure Alert Webhooks. Uses Managed Identity for Authentication.
-Useful for cases where Azure Autoscale cannot be used.
+Useful for cases where VMs need to be preserved and turned on/off as needed, as an alternative to Autoscale. 
 
 Use Case examples:
-* Start all/group of VMs when an alert is triggered. E.g. when metric value exceeds a threshold, start a group of VMs to add them to processing pool.
+* Start all/group of VMs when an alert is triggered. E.g. when metric value exceeds a threshold, start a group of VMs to add them to server pool.
 * Stop all/group of VMs when an alert is resolved
 * Start/Stop groups of VMs based on separate metric thresholds.
 
